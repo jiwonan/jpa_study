@@ -9,6 +9,15 @@ public class Member {
     @Id
     private Long id;
 
+    private String name;
+
+    public Member() {}
+
+    public Member(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     // @Column(name = "username") // 컬럼 이름이 객체와 데이터베이스가 다를 경우 해당 어노테이션으로 매핑 가능.
     public Long getId() {
         return id;
@@ -21,8 +30,6 @@ public class Member {
     public void setName(String name) {
         this.name = name;
     }
-
-    private String name;
 
     public String getName() {
         return name;
