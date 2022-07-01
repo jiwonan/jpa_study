@@ -34,14 +34,33 @@ public class JpaMain {
 //            Member findMember = em.find(Member.class, 1L);
 //            findMember.setName("HelloJPA");
 
-            List<Member> result = em.createQuery("select m from Member as m", Member.class)
-                            .setFirstResult(1)
-                            .setMaxResults(8)
-                            .getResultList();
+//            JPQL 사용.
+//            List<Member> result = em.createQuery("select m from Member as m", Member.class)
+//                            .setFirstResult(1)
+//                            .setMaxResults(8)
+//                            .getResultList();
+//
+//            for(Member member : result) {
+//                System.out.println("member.name = " + member.getName());
+//            }
 
-            for(Member member : result) {
-                System.out.println("member.name = " + member.getName());
-            }
+////////      영속성
+
+//            비영속
+//            Member member = new Member();
+//            member.setId(100L);
+//            member.setName("HelloJPA");
+
+//            영속
+//            System.out.println("=== BEFORE ===");
+//            em.persist(member);
+//            System.out.println("=== AFTER ===");
+
+//            준영속
+//            em.detach(member);
+
+//            삭제한 상태
+//            em.remove(member);
 
             tx.commit();
         } catch(Exception e) {
