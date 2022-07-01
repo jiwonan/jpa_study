@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe61b3f-7f4c-4006-b50e-96f4d7dbb9ae" name="Changes" comment="JPQL 테스트.">
+    <list default="true" id="fbe61b3f-7f4c-4006-b50e-96f4d7dbb9ae" name="Changes" comment="영속성 개념 정리.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
     </list>
@@ -96,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656694894477</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="영속성 개념 정리.">
+      <created>1656695755894</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656695755895</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +121,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="CRUD 테스트." />
     <MESSAGE value="JPQL 테스트." />
-    <option name="LAST_COMMIT_MESSAGE" value="JPQL 테스트." />
+    <MESSAGE value="영속성 개념 정리." />
+    <option name="LAST_COMMIT_MESSAGE" value="영속성 개념 정리." />
   </component>
 </project>
