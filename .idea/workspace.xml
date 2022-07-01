@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe61b3f-7f4c-4006-b50e-96f4d7dbb9ae" name="Changes" comment="생성자 생성.">
+    <list default="true" id="fbe61b3f-7f4c-4006-b50e-96f4d7dbb9ae" name="Changes" comment="flush 테스트.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
     </list>
@@ -117,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656697129479</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="flush 테스트.">
+      <created>1656697501315</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656697501315</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +145,7 @@
     <MESSAGE value="영속성 개념 정리." />
     <MESSAGE value="영속 엔티티 동일성" />
     <MESSAGE value="생성자 생성." />
-    <option name="LAST_COMMIT_MESSAGE" value="생성자 생성." />
+    <MESSAGE value="flush 테스트." />
+    <option name="LAST_COMMIT_MESSAGE" value="flush 테스트." />
   </component>
 </project>

@@ -16,8 +16,19 @@ public class JpaMain {
         EntityTransaction tx = em.getTransaction();
         tx.begin();
         try {
-            Member member = new Member(200L, "member200");
-            em.persist(member);
+            Member member = em.find(Member.class, 150L);
+            member.setName("AAAAA");
+
+            // 준영속
+            em.detach(member); // update query는 실행하지 않음.
+            // 영속성에서 분리했기 때문에.
+
+            // 특정 entity만 준영속 상태로 만들 때 -> detatch
+            // 전부 다 해제 -> em.clear
+            Member member2 = em.find(Member.class, 150L); // query가 두 번 실행됨.
+
+            // em.close
+            // 영속성 관리를 하지 않음.
 
             em.flush(); // 쿼리가 이 시점에 호출됨.
             // flush를 한다고 1차 캐시가 지워지지 않음.
