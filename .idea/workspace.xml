@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe61b3f-7f4c-4006-b50e-96f4d7dbb9ae" name="Changes" comment="영속 엔티티 동일성">
+    <list default="true" id="fbe61b3f-7f4c-4006-b50e-96f4d7dbb9ae" name="Changes" comment="생성자 생성.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656696465953</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="생성자 생성.">
+      <created>1656697129478</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656697129479</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +137,7 @@
     <MESSAGE value="JPQL 테스트." />
     <MESSAGE value="영속성 개념 정리." />
     <MESSAGE value="영속 엔티티 동일성" />
-    <option name="LAST_COMMIT_MESSAGE" value="영속 엔티티 동일성" />
+    <MESSAGE value="생성자 생성." />
+    <option name="LAST_COMMIT_MESSAGE" value="생성자 생성." />
   </component>
 </project>
