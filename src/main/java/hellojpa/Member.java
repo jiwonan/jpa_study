@@ -1,37 +1,37 @@
 package hellojpa;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 // @Table(name = "USER") // db 명과 클래스 명이 다를 경우 설정 가능.
 public class Member {
     @Id
     private Long id;
-    private String name;
 
-    private int age;
-    public Member() {}
+    @Column(name = "name")
+    private String username;
 
-    public Member(Long id, String name) {
-        this.id = id;
-        this.name = name;
-    }
+    private Integer age;
 
-    // @Column(name = "username") // 컬럼 이름이 객체와 데이터베이스가 다를 경우 해당 어노테이션으로 매핑 가능.
-    public Long getId() {
-        return id;
-    }
+    // Enum은 ORDINAL을 쓰면 안됨.
+    @Enumerated(EnumType.STRING)
+    private RoleType roleType;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date createdDate;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date lastModifiedDate;
+    // 최근에는 LoalDate, LocalDateTime을 지원하기때문에 Temporal이 필요 없음.
 
-    public String getName() {
-        return name;
+    @Lob // 큰 데이터.
+    private String description;
+
+    @Transient // DB에 컬럼 할당 x.
+    private int temp;
+
+    public Member() {
+
     }
 }
